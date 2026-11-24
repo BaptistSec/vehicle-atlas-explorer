@@ -95,8 +95,15 @@
     ['Last verified', function (r) { return val(r.last_verified); }]
   ];
 
+  var cmpVisible = false;
+  function jumpUpdate() { $('jump').hidden = picked.length < 2 || cmpVisible; }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { cmpVisible = e[0].isIntersecting; jumpUpdate(); }, { threshold: 0.05 })
+      .observe(document.getElementById('compare'));
+  }
+
   function renderCompare() {
-    $('jn').textContent = picked.length; $('jump').hidden = picked.length < 2;
+    $('jn').textContent = picked.length; jumpUpdate();
     var sel = picked.map(function (s) { return rows.filter(function (r) { return r.slug === s; })[0]; }).filter(Boolean);
     $('cmp-empty').style.display = sel.length >= 2 ? 'none' : '';
     $('cmp-empty').textContent = sel.length === 1 ? 'Pick at least one more vehicle.' : 'Tick "Compare" on two or more vehicles.';
