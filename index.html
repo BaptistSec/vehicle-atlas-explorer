@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas Garage: GTA VI vehicle explorer and comparer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Atlas Garage</h1>
+  <p class="sub">Browse, filter and compare the GTA VI vehicles listed by GTA Atlas.</p>
+  <p class="source">Data source: GTA Atlas, community-compiled, not game files.</p>
+</header>
+<main>
+  <section id="controls" aria-label="Filters">
+    <input id="q" type="search" placeholder="Search name, manufacturer, real-world match" aria-label="Search">
+    <select id="f-class" aria-label="Class"></select>
+    <select id="f-man" aria-label="Manufacturer"></select>
+    <select id="f-conf" aria-label="Confidence"></select>
+    <select id="f-sort" aria-label="Sort">
+      <option value="name">Sort: name</option>
+      <option value="manufacturer">Sort: manufacturer</option>
+      <option value="class">Sort: class</option>
+      <option value="seats">Sort: seats</option>
+    </select>
+    <label class="chk"><input id="f-data" type="checkbox"> Only with performance ratings</label>
+    <span id="count" aria-live="polite"></span>
+  </section>
+  <div class="layout">
+    <section id="list" aria-label="Vehicles"></section>
+    <aside id="compare" aria-label="Comparison">
+      <h2>Compare <button id="clear" type="button">Clear</button></h2>
+      <p id="cmp-empty">Tick "Compare" on two or more vehicles.</p>
+      <div id="cmp-table"></div>
+    </aside>
+  </div>
+</main>
+<footer>
+  <p>Data source: GTA Atlas, community-compiled, not game files. Credit: GTA Atlas (<a href="https://atlasgta.com">https://atlasgta.com</a>), CC BY-SA 4.0. Taken from <a href="https://atlasgta.com/data">atlasgta.com/data</a> (<code>vehicles.json</code>), a snapshot, <span id="snap"></span>.</p>
+  <p>Every value shown comes from that file. A blank in the source is shown as "not in the dataset", never estimated. Each vehicle shows its Atlas confidence and last-verified date.</p>
+  <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive. Grand Theft Auto is a trademark of Take-Two Interactive. This site contains no game files or game assets and does not modify or install anything.</p>
+  <p>Licence: CC BY-SA 4.0, see LICENSE.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

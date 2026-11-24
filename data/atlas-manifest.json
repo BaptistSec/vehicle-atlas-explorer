@@ -1,0 +1,144 @@
+{
+ "name": "GTA Atlas data feed",
+ "about": "The reference datasets behind atlasgta.com, as plain JSON. One file per entity, every row carrying its own sources, its confidence and the date a human last checked it. Our working notes are stripped before publication.",
+ "site": "https://atlasgta.com",
+ "manifest": "https://atlasgta.com/data/index.json",
+ "licence": {
+  "name": "CC BY-SA 4.0",
+  "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "GTA Atlas (https://atlasgta.com), CC BY-SA 4.0",
+  "credit_required": [
+   "GTA Atlas (https://atlasgta.com), CC BY-SA 4.0",
+   "GTA VI Map Tiles (CC BY 4.0), map.gtadb.org",
+   "GTA VI Landmarks Data (CC BY 4.0), map.gtadb.org"
+  ],
+  "basemap": {
+   "name": "gtadb.org",
+   "url": "https://map.gtadb.org",
+   "licence": "CC BY 4.0"
+  }
+ },
+ "files": [
+  {
+   "name": "animals",
+   "file": "animals.json",
+   "url": "https://atlasgta.com/data/animals.json",
+   "rows_key": "rows",
+   "rows": 57,
+   "last_verified": "2026-11-19",
+   "bytes": 42888,
+   "about": "The wildlife log by class, with what can be hunted, fished or studied."
+  },
+  {
+   "name": "characters",
+   "file": "characters.json",
+   "url": "https://atlasgta.com/data/characters.json",
+   "rows_key": "rows",
+   "rows": 46,
+   "last_verified": "2026-11-19",
+   "bytes": 40413,
+   "about": "The launch day cast, with the performer credited where a page gave us one."
+  },
+  {
+   "name": "cheats",
+   "file": "cheats.json",
+   "url": "https://atlasgta.com/data/cheats.json",
+   "rows_key": "cheats",
+   "rows": 61,
+   "last_verified": "2026-11-19",
+   "bytes": 36015,
+   "about": "Every cheat with the challenge that unlocks it and the sequence where one is published."
+  },
+  {
+   "name": "collectibles",
+   "file": "collectibles.json",
+   "url": "https://atlasgta.com/data/collectibles.json",
+   "rows_key": "rows",
+   "rows": 39,
+   "last_verified": "2026-11-19",
+   "bytes": 62833,
+   "about": "One row per collectible set with its total and the number the checklist asks for."
+  },
+  {
+   "name": "completion",
+   "file": "completion.json",
+   "url": "https://atlasgta.com/data/completion.json",
+   "rows_key": "rows",
+   "rows": 35,
+   "last_verified": "2026-11-19",
+   "bytes": 29168,
+   "about": "The lines of the in game completion checklist with the weight each one carries."
+  },
+  {
+   "name": "interiors",
+   "file": "interiors.json",
+   "url": "https://atlasgta.com/data/interiors.json",
+   "rows_key": "rows",
+   "rows": 37,
+   "last_verified": "2026-11-19",
+   "bytes": 31334,
+   "about": "Doors you can walk through, most of them read off footage we mined ourselves."
+  },
+  {
+   "name": "locations",
+   "file": "locations.json",
+   "url": "https://atlasgta.com/data/locations.json",
+   "rows_key": "rows",
+   "rows": 1005,
+   "last_verified": "2026-11-23",
+   "bytes": 1008794,
+   "about": "Every district, neighbourhood, shop and landmark we have logged, most of them with a coordinate."
+  },
+  {
+   "name": "missions",
+   "file": "missions.json",
+   "url": "https://atlasgta.com/data/missions.json",
+   "rows_key": "rows",
+   "rows": 88,
+   "last_verified": "2026-11-23",
+   "bytes": 90617,
+   "about": "Story and side missions with their objectives, no spoilers in the names."
+  },
+  {
+   "name": "properties",
+   "file": "properties.json",
+   "url": "https://atlasgta.com/data/properties.json",
+   "rows_key": "rows",
+   "rows": 19,
+   "last_verified": "2026-11-19",
+   "bytes": 27990,
+   "about": "Safehouses and garages with prices, parking spots and income."
+  },
+  {
+   "name": "trophies",
+   "file": "trophies.json",
+   "url": "https://atlasgta.com/data/trophies.json",
+   "rows_key": "rows",
+   "rows": 55,
+   "last_verified": "2026-11-19",
+   "bytes": 37676,
+   "about": "All the trophies and achievements by tier, rewritten in our own words."
+  },
+  {
+   "name": "vehicles",
+   "file": "vehicles.json",
+   "url": "https://atlasgta.com/data/vehicles.json",
+   "rows_key": "rows",
+   "rows": 324,
+   "last_verified": "2026-11-23",
+   "bytes": 466350,
+   "about": "The launch day vehicle roster with classes, manufacturers and the ratings each outlet publishes."
+  },
+  {
+   "name": "weapons",
+   "file": "weapons.json",
+   "url": "https://atlasgta.com/data/weapons.json",
+   "rows_key": "rows",
+   "rows": 198,
+   "last_verified": "2026-11-23",
+   "bytes": 297948,
+   "about": "The launch day weapon roster with classes and where each one turns up."
+  }
+ ],
+ "total_rows": 1964
+}
