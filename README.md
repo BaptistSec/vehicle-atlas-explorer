@@ -2,7 +2,9 @@
 
 ![Atlas Garage comparing three vehicles](docs/screenshot.png)
 
-A single-page browser app to search, filter and compare the GTA VI vehicles listed in the GTA Atlas dataset.
+Search, filter and compare 324 GTA VI vehicles, with source, confidence and last-verified date on every one.
+
+A single-page browser app built on the GTA Atlas vehicle dataset.
 
 **Data source: GTA Atlas, community-compiled, not game files.** The only data is `data/vehicles.json`, a snapshot of https://atlasgta.com/data/vehicles.json (324 vehicles, fetched 24 Nov 2026). Where the file has no value, the page says "not in the dataset". Nothing is estimated. Each vehicle shows Atlas's confidence and last-verified date.
 

@@ -96,6 +96,7 @@
   ];
 
   function renderCompare() {
+    $('jn').textContent = picked.length; $('jump').hidden = picked.length < 2;
     var sel = picked.map(function (s) { return rows.filter(function (r) { return r.slug === s; })[0]; }).filter(Boolean);
     $('cmp-empty').style.display = sel.length >= 2 ? 'none' : '';
     $('cmp-empty').textContent = sel.length === 1 ? 'Pick at least one more vehicle.' : 'Tick "Compare" on two or more vehicles.';

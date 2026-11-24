@@ -29,4 +29,9 @@ th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;vertic
 th{color:var(--mut);font-weight:500}
 footer{color:var(--mut);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
 footer a{color:var(--ac)}
-@media(max-width:900px){.layout{grid-template-columns:1fr}#compare{position:static}}
+#jump{display:none}
+@media(max-width:900px){.layout{grid-template-columns:1fr}#compare{position:static;max-height:none;overflow-x:auto;scroll-margin-top:8px}
+#jump:not([hidden]){display:block;position:fixed;right:12px;bottom:12px;z-index:5;background:var(--ac);color:#08110f;font-weight:600;padding:10px 16px;border-radius:24px;text-decoration:none;box-shadow:0 2px 10px #0008}
+.card label{display:inline-block;padding:6px 0}.card input[type=checkbox]{width:20px;height:20px;vertical-align:middle}
+.chk input{width:18px;height:18px}
+#controls select,#controls input[type=search]{flex:1 1 140px;min-width:0}#count{margin-left:0;flex-basis:100%}}
